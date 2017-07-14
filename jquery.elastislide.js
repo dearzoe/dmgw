@@ -564,8 +564,8 @@
 					amount = totalSpace - ( Math.abs( translation ) + visibleSpace );
 
 					// show / hide navigation buttons
-					this._toggleControls( 'next', false );
-					this._toggleControls( 'prev', true );
+					// this._toggleControls( 'next', false );
+					// this._toggleControls( 'prev', true );
 
 				}
 				else if( dir === 'prev' && Math.abs( translation ) - amount < 0 ) {
@@ -573,8 +573,8 @@
 					amount = Math.abs( translation );
 
 					// show / hide navigation buttons
-					this._toggleControls( 'next', true );
-					this._toggleControls( 'prev', false );
+					// this._toggleControls( 'next', true );
+					// this._toggleControls( 'prev', false );
 
 				}
 				else {
@@ -583,8 +583,8 @@
 					var ftv = dir === 'next' ? Math.abs( translation ) + Math.abs( amount ) : Math.abs( translation ) - Math.abs( amount );
 					
 					// show / hide navigation buttons
-					ftv > 0 ? this._toggleControls( 'prev', true ) : this._toggleControls( 'prev', false );
-					ftv < totalSpace - visibleSpace ? this._toggleControls( 'next', true ) : this._toggleControls( 'next', false );
+					// ftv > 0 ? this._toggleControls( 'prev', true ) : this._toggleControls( 'prev', false );
+					// ftv < totalSpace - visibleSpace ? this._toggleControls( 'next', true ) : this._toggleControls( 'next', false );
 						
 				}
 				
@@ -602,8 +602,8 @@
 				}
 
 				// show / hide navigation buttons
-				amount > 0 ? this._toggleControls( 'prev', true ) : this._toggleControls( 'prev', false );
-				Math.max( totalSpace, visibleSpace ) - visibleSpace > amount ? this._toggleControls( 'next', true ) : this._toggleControls( 'next', false );
+				// amount > 0 ? this._toggleControls( 'prev', true ) : this._toggleControls( 'prev', false );
+				// Math.max( totalSpace, visibleSpace ) - visibleSpace > amount ? this._toggleControls( 'next', true ) : this._toggleControls( 'next', false );
 
 			}
 			
@@ -818,3 +818,4 @@
 	};
 	
 } )( jQuery, window );
+
